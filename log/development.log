@@ -2135,3 +2135,47 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/products/24.json" for 93.115.195.88 at 2019-08-12 14:33:47 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/products/23" for 93.115.195.88 at 2019-08-12 14:33:47 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"24"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 24]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (3.18ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/23" for 93.115.195.88 at 2019-08-12 14:33:49 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/products/25.json" for 93.115.195.88 at 2019-08-12 14:33:49 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.2ms)
+
+
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"25"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 25]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (2.44ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/24.json" for 93.115.195.88 at 2019-08-12 14:33:50 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/products/23" for 93.115.195.88 at 2019-08-12 14:33:50 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
